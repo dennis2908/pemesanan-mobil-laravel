@@ -1,0 +1,38 @@
+version: '2'
+services:
+
+  app:
+    build:
+      context: ./
+      dockerfile: app.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./rest-app:/var/www
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=dbalamsutera"
+
+  web:
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    working_dir: /var/www
+    volumes_from:
+      - app
+    ports:
+      - 8080:80
+
+  dbalamsutera:
+    image: mysql:5.6
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=alamSutera"
+      - "MYSQL_USER=alamSutera"
+      - "MYSQL_PASSWORD=alamSutera"
+      - "MYSQL_ROOT_PASSWORD=alamSutera"
+    ports:
+        - "33061:3306"
+
+volumes:
+  dbdata:
