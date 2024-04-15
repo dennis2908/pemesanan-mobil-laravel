@@ -9,9 +9,6 @@
         "dest": "/api/index.php"
     }],
     "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "true",
-        "APP_URL": "https://yourprojectdomain.com",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
@@ -22,6 +19,15 @@
 
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
+        "SESSION_DRIVER": "cookie",
+
+        "PG_HOST": "ep-floral-butterfly-a5i9yr1j.us-east-2.aws.neon.tech",
+        "PG_PORT": "5432",
+        "PG_DB": "pemesanan-mobil",
+        "PG_SSL": "require",
+        "PG_USER": "pemesanan-mobil_owner",
+        "PG_PASSWORD": "endpoint=ep-floral-butterfly-a5i9yr1j;rf1lexRS7pjZ",
+
+        "PGSQL_SSL_CA" : "org.postgresql.ssl.DefaultJavaSSLFactory"
     }
 }

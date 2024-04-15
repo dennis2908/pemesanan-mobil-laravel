@@ -18,7 +18,7 @@ class CreateMusersTable extends Migration
             $table->string('nama');
             $table->string('alamat');
             $table->string('no_telp');
-            $table->string('no_sim')->unique();
+            $table->string('no_sim');
             $table->string('password');
             $table->integer('m_role')->default(1);
             $table->timestamps();
