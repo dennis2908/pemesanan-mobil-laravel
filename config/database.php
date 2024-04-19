@@ -70,7 +70,7 @@ return [
             'port' => 5432,
             'database' => 'neondb',
             'username' => 'neondb_owner',
-            'password' => 'endpoint=ep-tiny-violet-a1e30fk8;5hIkCwmcQKp4',
+            'password' => '5hIkCwmcQKp4',
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
