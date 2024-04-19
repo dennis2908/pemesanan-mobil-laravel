@@ -65,17 +65,18 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            // 'url' => 'postgresql://pemesanan-mobil_owner:rf1lexRS7pjZ@ep-floral-butterfly-a5i9yr1j-pooler.us-east-2.aws.neon.tech/salesy?sslmode=require',
+            'host' => 'ep-tiny-violet-a1e30fk8.ap-southeast-1.aws.neon.tech',
+            'port' => 5432,
+            'database' => 'neondb',
+            'username' => 'neondb_owner',
+            'password' => 'endpoint=ep-tiny-violet-a1e30fk8;5hIkCwmcQKp4',
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
             'schema' => 'public',
-            'sslmode' => 'prefer',
+            'sslmode' => 'require',
+            'sslrootcert'=>'org.postgresql.ssl.DefaultJavaSSLFactory'
         ],
 
         'sqlsrv' => [
