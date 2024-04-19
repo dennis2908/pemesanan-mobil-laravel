@@ -11,7 +11,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "pemesanan-mobil-laravel-mqzmqz4e0-michael-dennis-projects.vercel.app",
+        "APP_URL": "https://pemesanan-mobil-laravel-i83yvj1xt-michael-dennis-projects.vercel.app",
  
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
